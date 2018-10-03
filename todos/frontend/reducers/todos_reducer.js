@@ -21,7 +21,6 @@ const initialState = {
     Object.freeze(state);
 
     let newState = merge({}, state);
-
     switch (action.type) {
       case RECEIVE_TODO:
         newState[action.todo.id] = action.todo;
